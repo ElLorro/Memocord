@@ -1,0 +1,7 @@
+services:
+  memocord:
+    image: ellorro/memocord:latest
+    container_name: discord-memos-bot
+    restart: unless-stopped
+    env_file:
+      - .env
